@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Data Model - Ceteris DWH.Dataset"
+    },
+    "byConnection": null
+  }
+}

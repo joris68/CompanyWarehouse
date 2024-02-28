@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Seite 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"ce587429d1c2e34e0962\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.990633780830471,\"y\":0,\"z\":0,\"width\":938.7199500468311,\"height\":280.1373712144864,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Helper Duplikate.TableName\"},{\"queryRef\":\"Sum(Helper Duplikate.SumDuplicates)\"},{\"queryRef\":\"Sum(Helper Duplikate.ManuallyOverwritten)\"},{\"queryRef\":\"CountNonNull(Helper Duplikate.HitDuplicateKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Helper Duplikate\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"HitDuplicateKey\"}},\"Function\":5},\"Name\":\"CountNonNull(Helper Duplikate.HitDuplicateKey)\",\"NativeReferenceName\":\"Anzahl von HitDuplicateKey\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ManuallyOverwritten\"}},\"Function\":0},\"Name\":\"Sum(Helper Duplikate.ManuallyOverwritten)\",\"NativeReferenceName\":\"Summe von ManuallyOverwritten\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"SumDuplicates\"}},\"Function\":0},\"Name\":\"Sum(Helper Duplikate.SumDuplicates)\",\"NativeReferenceName\":\"Summe von SumDuplicates\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"TableName\"},\"Name\":\"Helper Duplikate.TableName\",\"NativeReferenceName\":\"TableName\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.14,
+          "width": 938.72,
+          "x": 9.99,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
