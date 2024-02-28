@@ -1,0 +1,1 @@
+﻿EXEC [dbo].[prc_AddUnknownDimensionMembersDynamic] @SchemaName = 'mart',@TableName = 'DimAccount'

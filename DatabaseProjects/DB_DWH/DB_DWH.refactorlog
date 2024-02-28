@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2835e4fa-95f9-4388-9759-6db2ed46b27a" ChangeDateTime="01/30/2024 14:27:04">
+    <Property Name="ElementName" Value="[dwh].[FactBlueAntAbsence].[Deleted]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dwh].[FactBlueAntAbsence]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IsDeleted]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d63157df-3cce-44cf-8f39-b55baf5a74c6" ChangeDateTime="02/12/2024 09:44:28">
+    <Property Name="ElementName" Value="[tmp].[logging_HashkeyBkDuplikatsStatus].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tmp].[logging_HashkeyBkDuplikatsStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Idasas" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f7cd2f8-40d8-4a5d-9f55-7743cebe5231" ChangeDateTime="02/28/2024 15:29:11">
+    <Property Name="ElementName" Value="[dwh].[FactBlueAntBudgetValues]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dwh]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[FactBlueAntBudgetValues_rename_DBR_20240228]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="744a5bd1-c6a8-437c-bc67-80ab488d326f" ChangeDateTime="02/21/2024 15:55:45">
+    <Property Name="ElementName" Value="[mart].[DimKonto].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="KontoId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="90e23589-036d-46eb-93f7-7c10bf55a82e" ChangeDateTime="02/22/2024 10:06:45">
+    <Property Name="ElementName" Value="[mart].[DimKonto].[KontoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AccountId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a18cc739-8956-4876-8770-a7ec74d39c72" ChangeDateTime="02/22/2024 10:07:06">
+    <Property Name="ElementName" Value="[mart].[DimKonto].[Konto]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[Account]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fbdacb99-89c1-4e86-a9b6-63d6f364e1ee" ChangeDateTime="02/22/2024 10:07:22">
+    <Property Name="ElementName" Value="[mart].[DimKonto].[Bezeichnung]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AccountName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ff0ad8f-580e-4592-b86a-b4576606d328" ChangeDateTime="02/22/2024 10:07:53">
+    <Property Name="ElementName" Value="[mart].[DimKonto].[IstBlattElement]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IsLeaf]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="343be29c-9c1d-4442-b755-97b559573985" ChangeDateTime="02/22/2024 10:08:06">
+    <Property Name="ElementName" Value="[mart].[DimKonto]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[mart]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DimAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c56c61df-2ddb-4707-8f8e-6b56dda00746" ChangeDateTime="02/22/2024 10:08:59">
+    <Property Name="ElementName" Value="[mart].[PK_mart_DimKonto]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[mart].[DimAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_mart_DimAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9a0685e5-607d-42b3-9e18-c1db27e48bdd" ChangeDateTime="02/22/2024 10:09:25">
+    <Property Name="ElementName" Value="[etl].[prc_FillMartDimKonto]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[etl]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[prc_FillMartDimAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97e005ad-28dc-43b1-b93d-cd9c3284a006" ChangeDateTime="02/22/2024 10:27:00">
+    <Property Name="ElementName" Value="[mart].[RelKontoToKonto]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[mart]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[RelAccountToAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6a1c4003-3118-4f2e-9578-ab20f032f2d5" ChangeDateTime="02/22/2024 10:28:50">
+    <Property Name="ElementName" Value="[mart].[RelAccountToAccount].[ElternKontoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[RelAccountToAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ParentAccountId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c9625bd-5fdd-4484-9324-7cf1a69c4232" ChangeDateTime="02/22/2024 10:29:05">
+    <Property Name="ElementName" Value="[mart].[RelAccountToAccount].[KindKontoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[RelAccountToAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ChildAccountId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e696f9b3-985b-4978-b9c1-417dde588793" ChangeDateTime="02/22/2024 10:29:20">
+    <Property Name="ElementName" Value="[mart].[RelAccountToAccount].[IstGelöscht]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[RelAccountToAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="146e3441-262e-48d5-8169-b41abb62ed74" ChangeDateTime="02/22/2024 10:31:18">
+    <Property Name="ElementName" Value="[mart].[RelAccountToAccount].[GelöschtAm]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[RelAccountToAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeleteDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ad33e311-80af-4ac4-b1c8-fb250d97601d" ChangeDateTime="02/22/2024 10:32:54">
+    <Property Name="ElementName" Value="[mart].[PK_mart_RelKontoToKonto]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[mart].[RelAccountToAccount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_mart_RelAccountToAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0a504e7f-e221-4440-abf7-4d34a29c45ee" ChangeDateTime="02/22/2024 10:39:41">
+    <Property Name="ElementName" Value="[etl].[prc_FillMartRelKontoToKonto]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[etl]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[prc_FillMartRelAccountToAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="16861b55-fe69-4815-82e8-91fb6e3186e2" ChangeDateTime="02/22/2024 10:53:01">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung].[KontoTransaktionsIdentifikator]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountTransactionIdentifier" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8449b687-7eae-4512-bd2f-b368f2214a42" ChangeDateTime="02/22/2024 10:53:14">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung].[KontoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="726ee73a-b5d0-44d6-beea-5ceb16adaeaf" ChangeDateTime="02/22/2024 10:53:48">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung].[Wert]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Balance" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a9a5fa40-81f8-4236-85c3-5e8dc4ca507e" ChangeDateTime="02/22/2024 10:54:22">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung].[IstGelöscht]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c866664d-c21b-437a-ad23-be6e66ea96a3" ChangeDateTime="02/22/2024 10:54:30">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung].[GelöschtAm]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeleteDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b76b773a-6032-405f-b348-6adda47f2fa4" ChangeDateTime="02/22/2024 10:54:56">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[mart]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[FactBusinessManagementEvaluation]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="722bf015-07a1-45b8-848b-f041bda204a8" ChangeDateTime="02/22/2024 10:55:21">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementEvaluation].[AccountTransactionIdentifier]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementEvaluation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EvaluationTransactionIdentifier" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bbf78761-ec43-41a1-aa2d-513d43c20e7e" ChangeDateTime="02/22/2024 10:55:52">
+    <Property Name="ElementName" Value="[etl].[prc_FillMartFaktBetriebswirtschaftlicheAuswertung]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[etl]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="prc_FillMartFactBusinessManagementEvaluation" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f59dfcc-f1b8-4a44-9e29-2ccf6ec092be" ChangeDateTime="02/22/2024 11:07:18">
+    <Property Name="ElementName" Value="[mart].[FaktBetriebswirtschaftlichePlanung]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[mart]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[FactBusinessManagementPlanning]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="381ab908-2090-4b93-9c44-5af145de4c00" ChangeDateTime="02/22/2024 11:07:43">
+    <Property Name="ElementName" Value="[etl].[prc_FillMartFaktBetriebswirtschaftlichePlanung]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[etl]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[prc_FillMartFactBusinessManagementPlanning]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e2465f6-75d6-4070-8c8e-ec6e10177546" ChangeDateTime="02/22/2024 11:08:32">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning].[PlanungsIdentifikator]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PlanningTransactionIdentifier" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="15618a7d-4540-4ce8-92fc-028e005e1144" ChangeDateTime="02/22/2024 11:09:02">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning].[KontoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb145218-28a3-465d-a87b-082ced575f50" ChangeDateTime="02/22/2024 11:09:19">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning].[Wert]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Balance" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa0203c4-9c37-4015-b342-27d7cfd7cd0e" ChangeDateTime="02/22/2024 11:09:32">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning].[IstGelöscht]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb9ba23b-22b3-435c-adfa-f3b4cfb84827" ChangeDateTime="02/22/2024 11:09:47">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning].[GelöschtAm]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeleteDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a861585d-0c3d-48e0-b354-f3594426c2f2" ChangeDateTime="02/28/2024 12:44:46">
+    <Property Name="ElementName" Value="[pbi].[vw_FactBusinessManagementPlanning]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="ParentElementName" Value="[pbi]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[vw_FactBusinessManagementEvaluationPlan]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4ed2da57-acbf-49e0-bc93-a0c715b31404" ChangeDateTime="02/28/2024 12:44:56">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementPlanning]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[mart]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[FactBusinessManagementEvaluationPlan]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cee40bcc-03bd-42c6-b06f-23173862970e" ChangeDateTime="02/28/2024 12:45:52">
+    <Property Name="ElementName" Value="[mart].[FactBusinessManagementEvaluationPlan].[CIX_mart_FactBusinessManagementPlanning_DateId]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[mart].[FactBusinessManagementEvaluationPlan]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CIX_mart_FactBusinessManagementEvaluationPlan_DateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0dd4c355-0128-4bb6-9305-fdaea6e70d87" ChangeDateTime="02/28/2024 12:46:28">
+    <Property Name="ElementName" Value="[error].[mart_FactBusinessManagementPlanningMissingAccountMapping]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[error]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[mart_FactBusinessManagementEvaluationPlanMissingAccountMapping]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3389b641-940d-4274-bc4d-2e92d425177c" ChangeDateTime="02/28/2024 12:46:53">
+    <Property Name="ElementName" Value="[pbi].[vw_FactBusinessManagementPlanningMissingAccountMapping]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="ParentElementName" Value="[pbi]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[vw_FactBusinessManagementEvaluationPlanMissingAccountMapping]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4d256c84-b996-47ef-bcc8-ed2f54b39d10" ChangeDateTime="02/28/2024 12:48:03">
+    <Property Name="ElementName" Value="[error].[PK_mart_FactBusinessManagementPlanningMissingAccountMapping]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[error].[mart_FactBusinessManagementEvaluationPlanMissingAccountMapping]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_mart_FactBusinessManagementEvaluationPlanMissingAccountMapping]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="931e165b-3684-4c94-8f59-23b4141d0776" ChangeDateTime="02/28/2024 12:49:43">
+    <Property Name="ElementName" Value="[etl].[prc_FillMartFactBusinessManagementPlanning]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[etl]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[prc_FillMartFactBusinessManagementEvaluationPlan]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0308a286-53a6-4012-8286-edcdf7bd6785" ChangeDateTime="02/28/2024 12:57:47">
+    <Property Name="ElementName" Value="[tmp].[BWA_DBR_DEV_20240221]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="stg" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8d137e59-980b-44c4-90b8-944668537310" ChangeDateTime="02/28/2024 12:58:40">
+    <Property Name="ElementName" Value="[stg].[BWA_DBR_DEV_20240221]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[stg]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[datev_BWA]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8e5a9f2-cef6-4049-97a0-8da2f0ab549a" ChangeDateTime="02/28/2024 13:00:32">
+    <Property Name="ElementName" Value="[stg].[datev_BWA]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[stg]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[datevBWA]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b470eb5b-307d-4c4f-bf21-8ac84b9fbfe9" ChangeDateTime="02/28/2024 13:00:41">
+    <Property Name="ElementName" Value="[tmp].[datev_BWA]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[tmp]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[datevBWA]" />
+  </Operation>
+</Operations>

@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=funcstoragemoezcrypto;AccountKey=XXXXXXXXXXX;EndpointSuffix=core.windows.net",
+    "STAGING_connectionString": "DefaultEndpointsProtocol=https;AccountName=stdwhstagingprodgt4645g;AccountKey=XXXXXXXXXXX;EndpointSuffix=core.windows.net",
+    "JiraAuth" : "XXXXXXXXXXX",
+    "DBDWHConnectionString": "Driver={ODBC Driver 17 for SQL Server};Server=sql-dwh-prod-gt4645g.database.windows.net;Database=sqldb-dwh-prod-gt4645g;Uid=sqladmin;Pwd=XXXXXXXXXXX",
+    "BlueAntAnmeldeName" : "jira",
+    "BlueAntPassword" : "XXXXXXXXXXX",
+    "BlueAntRestAPIToken" : "XXXXXXXXXXX",
+    "DataverseConnectionString": "DefaultEndpointsProtocol=https;AccountName=cetdwhdataverse;AccountKey=XXXXXXXXXXX;EndpointSuffix=core.windows.net"
+  }
+}

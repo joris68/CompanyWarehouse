@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DB_DWH</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{afd14471-6ec2-4200-a940-355c63decd8c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DB_DWH</RootNamespace>
+    <AssemblyName>DB_DWH</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Stored Procedures\" />
+    <Folder Include="Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\20240214_Pre_DeleteDuplicatesFactJiraIssue.sql" />
+    <None Include="Scripts\20240223_Pre_FixDuplicates.sql" />
+    <Build Include="Tables\tmp.dwh_FactProjectPlanning.sql" />
+    <Build Include="Tables\dwh.FactBlueAntWorklogHistory.sql" />
+    <Build Include="Tables\tmp.dwh_FactJiraIssue.sql" />
+    <Build Include="Tables\dwh.FactJiraIssue.sql" />
+    <Build Include="Tables\dwh.DimJiraProject.sql" />
+    <Build Include="Tables\tmp.dwh_FactPlanningSCD2.sql" />
+    <Build Include="Tables\dwh.FactBlueAntInvoice.sql" />
+    <Build Include="Tables\logging.LoadLogging.sql" />
+    <Build Include="Tables\dwh.DimBlueAntWorkTimeCalendarDetail.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntInvoice.sql" />
+    <Build Include="Tables\tmp.dwh_FactCapacity.sql" />
+    <Build Include="Tables\dwh.DimJiraIssue.sql" />
+    <Build Include="Tables\tmp.dwh_PersonioAbsences.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntAbsence.sql" />
+    <Build Include="Tables\dwh.FactBlueAntWorklog.sql" />
+    <Build Include="Tables\tmp.changed.sql" />
+    <Build Include="Tables\dwh.DimHolidays.sql" />
+    <Build Include="Tables\tmp.dwh_DimHolidays.sql" />
+    <Build Include="Tables\dwh.FactBlueAntAbsence.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntAbsenceType.sql" />
+    <Build Include="Tables\dwh.DimBlueAntAbsenceType.sql" />
+    <Build Include="Tables\dwh.DimUser.sql" />
+    <Build Include="Tables\dwh.MappingFactAggWorklogToFactJiraWorklog.sql" />
+    <Build Include="Tables\dwh.MappingFactAggWorklogToFactBlueAntWorklog.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntWorkTimeCalendarDetail.sql" />
+    <Build Include="Tables\dwh.DimBlueAntCustomer.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraUser.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraProject.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntUser.sql" />
+    <Build Include="Tables\pln.pln_DimProjectInternal.sql" />
+    <Build Include="Tables\dwh.FactJiraWorklog.sql" />
+    <Build Include="Tables\dwh.DimDate.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraIssue.sql" />
+    <Build Include="Tables\dwh.DimJiraIssueType.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntCustomer.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntInvoiceState.sql" />
+    <Build Include="Tables\dwh.DimBlueAntInvoiceState.sql" />
+    <Build Include="Tables\dwh.FactWorklog.sql" />
+    <Build Include="Tables\tmp.dwh_DimDealState.sql" />
+    <Build Include="Tables\tmp.dwh_DimDeal.sql" />
+    <Build Include="Tables\dwh.DimDealState.sql" />
+    <Build Include="Tables\dwh.FactBlueAntWorktimeCalendar.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntWorktimeCalendar.sql" />
+    <Build Include="Tables\dwh.DimJiraProjectCategory.sql" />
+    <Build Include="Tables\dwh.FactTeamExtendedCapacity.sql" />
+    <Build Include="Tables\dwh.DimDeal.sql" />
+    <Build Include="Tables\dwh.FactPlanning.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraProjectCategory.sql" />
+    <Build Include="Tables\tmp.dwh_FactNoWork.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntWorklogHistory.sql" />
+    <Build Include="Tables\pln.PLANPRJMA.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntBudget.sql" />
+    <Build Include="Tables\dwh.FactBlueAntBudget.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntWorklogHistoryTest.sql" />
+    <Build Include="Tables\dwh.DimBlueAntProject.sql" />
+    <Build Include="Tables\tmp.dwh_DimUser.sql" />
+    <Build Include="Tables\dwh.DimJiraUser.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntProjectResource.sql" />
+    <Build Include="Tables\dwh.DimBlueAntUser.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntProjectTask.sql" />
+    <Build Include="Tables\tmp.dwh_DimUserExtended.sql" />
+    <Build Include="Tables\dwh.FactBlueAntProjectResource.sql" />
+    <Build Include="Tables\dwh.FactBlueAntProjectTask.sql" />
+    <Build Include="Tables\dwh.RelJiraToBlueAnt.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntProjectRoles.sql" />
+    <Build Include="Tables\dwh.DimTarget.sql" />
+    <Build Include="Tables\dwh.DimBlueAntProjectRoles.sql" />
+    <Build Include="Tables\dwh.FactPlanningSCD2.sql" />
+    <None Include="Tables\tmp.dwh_FactPlanning.sql" />
+    <Build Include="Tables\tmp.dwh_FactJiraWorklog.sql" />
+    <Build Include="Tables\dwh.DimBlueAntProjectTask.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraIssueType.sql" />
+    <Build Include="Tables\pln.KAPAZITAET.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntProjectTask.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntProjectState.sql" />
+    <Build Include="Tables\tmp.dwh_DimJiraSprint.sql" />
+    <Build Include="Tables\dwh.DimBlueAntProjectState.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntBudgetValues.sql" />
+    <Build Include="Tables\dwh.DimJiraSprint.sql" />
+    <Build Include="Tables\dwh.FactBlueAntBudgetValues.sql" />
+    <Build Include="Tables\tmp.dwh_FactBlueAntWorklog.sql" />
+    <Build Include="Tables\dwh.FactProjectPlanning.sql" />
+    <Build Include="Tables\tmp.dwh_DimBlueAntProject.sql" />
+    <Build Include="Views\pln.vw_DimDay.sql" />
+    <Build Include="Views\pbi.vw_FactTeamExtendedCapacity.sql" />
+    <Build Include="Views\pbi.vw_FactTeamCapacity.sql" />
+    <Build Include="Views\pln.vw_DimDate.sql" />
+    <Build Include="Views\pbi.vw_FactPlan.sql" />
+    <Build Include="Views\pln.vw_ProjectMITARBEITER.sql" />
+    <Build Include="Views\pln.vw_DimDateExtended.sql" />
+    <Build Include="Views\pbi.vw_FactCapacity.sql" />
+    <Build Include="Views\pbi.vw_DimProjectRole.sql" />
+    <Build Include="Views\pbi.vw_DimAbsence.sql" />
+    <Build Include="Views\pln.vw_DimDateAll.sql" />
+    <Build Include="Views\pln.vw_DimDateAttr.sql" />
+    <Build Include="Views\pln.vw_DimDayAll.sql" />
+    <Build Include="Views\pln.vw_DimDayAttr.sql" />
+    <Build Include="Views\pln.vw_DimMITARBEITERAttr.sql" />
+    <Build Include="Views\pln.vw_FactCapacity.sql" />
+    <Build Include="Views\pln.vw_FactCapacityWeek.sql" />
+    <Build Include="Views\pln.vw_FactProjectBudget.sql" />
+    <Build Include="Views\pbi.vw_DimUser.sql" />
+    <Build Include="Views\pln.vw_DimDate_OLD.sql" />
+    <Build Include="Views\pbi.vw_DimDate.sql" />
+    <Build Include="Views\pln.vw_DimDateQuarter.sql" />
+    <Build Include="Views\pbi.vw_DimSprint.sql" />
+    <Build Include="Views\pln.vw_DimDateMonth.sql" />
+    <Build Include="Views\pln.vw_DimUser.sql" />
+    <Build Include="Views\pln.vw_DimProjectAttr.sql" />
+    <Build Include="Views\pbi.vw_DimProject.sql" />
+    <Build Include="Views\pbi.vw_DimCustomer.sql" />
+    <Build Include="Views\pln.vw_DimProject.sql" />
+    <Build Include="Views\pln.vw_FactWorklogDays.sql" />
+    <Build Include="Views\pln.vw_DimProjectAll.sql" />
+    <Build Include="Views\pln.vw_FactWorklog.sql" />
+    <Build Include="Views\pbi.vw_FactInvoice.sql" />
+    <Build Include="Views\pln.vw_DimDeal.sql" />
+    <Build Include="Views\pbi.vw_DimDeal.sql" />
+    <Build Include="Views\pbi.vw_FactNoWorking.sql" />
+    <Build Include="Views\pbi.vw_DimProjectTask.sql" />
+    <Build Include="Views\pbi.vw_DimTarget.sql" />
+    <Build Include="Views\pln.vw_DimDateWeek.sql" />
+    <Build Include="Views\pbi.vw_FactWorklogSmall.sql" />
+    <Build Include="Views\pbi.vw_FactJiraIssue.sql" />
+    <Build Include="Views\pbi.vw_FactBlueAntWorkTimeCalendarDetail.sql" />
+    <Build Include="Functions\dbo.svf_GetDefaultValueForType.sql" />
+    <Build Include="Stored Procedures\dbo.sp_FillFactCapacity.sql" />
+    <Build Include="Stored Procedures\dbo.prc_AddUnknownDimensionMembersDynamic.sql" />
+    <Build Include="Security\dwh.sql" />
+    <Build Include="Security\logging.sql" />
+    <Build Include="Security\pbi.sql" />
+    <Build Include="Security\pln.sql" />
+    <Build Include="Security\tmp.sql" />
+    <Build Include="Security\vw_bizview.sql" />
+    <Build Include="Security\vw_dwh.sql" />
+    <PostDeploy Include="Scripts\_Post_MasterScript.sql" />
+    <None Include="Scripts\20240115_Pre_DeleteNewAbsences.sql" />
+    <PreDeploy Include="Scripts\_Pre_MasterScript.sql" />
+    <Build Include="Views\pln.vw_DimProjectInternal.sql" />
+    <Build Include="Views\pbi.vw_FactProjectBudget.sql" />
+    <Build Include="Views\pbi.vw_FactBudgetDays.sql" />
+    <Build Include="Views\pbi.vw_FactBudget.sql" />
+    <Build Include="Views\pbi.vw_DimJiraIssue.sql" />
+    <None Include="Scripts\20240205_Pre_DropunusedView.sql" />
+    <Build Include="Security\mart.sql" />
+    <Build Include="Tables\mart.DimAccount.sql" />
+    <Build Include="Stored Procedures\etl.prc_FillMartDimAccount.sql" />
+    <Build Include="Tables\tmp.datevBWA.sql" />
+    <Build Include="Security\etl.sql" />
+    <Build Include="Tables\mart.RelAccountToAccount.sql" />
+    <Build Include="Stored Procedures\etl.prc_FillMartRelAccountToAccount.sql" />
+    <Build Include="Views\pbi.vw_DimAccountStructure.sql" />
+    <Build Include="Tables\mart.FactBusinessManagementEvaluation.sql" />
+    <Build Include="Stored Procedures\etl.prc_FillMartFactBusinessManagementEvaluation.sql" />
+    <Build Include="Views\pbi.vw_FactBusinessManagementEvaluation.sql" />
+    <Build Include="Views\pbi.vw_DimAccount.sql" />
+    <Build Include="Tables\mart.FactBusinessManagementEvaluationPlan.sql" />
+    <Build Include="Stored Procedures\etl.prc_FillMartFactBusinessManagementEvaluationPlan.sql" />
+    <Build Include="Tables\tmp.Soll_DBR_DEV_20240221.sql" />
+    <Build Include="Views\pbi.vw_FactBusinessManagementEvaluationPlan.sql" />
+    <Build Include="Tables\error.mart_FactBusinessManagementPlanning.sql" />
+    <Build Include="Security\error.sql" />
+    <Build Include="Views\pbi.vw_FactBusinessManagementEvaluationPlanMissingAccountMapping.sql" />
+    <Build Include="Stored Procedures\etl.prc_FillStgDatevBWA.sql" />
+    <Build Include="Security\stg.sql" />
+    <Build Include="Tables\stg.datevBWA.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DEV_sql-ceteris-dwh.database.windows.net.publish.xml" />
+    <None Include="PROD_sql-dwh-prod-gt4645g.database.windows.net.publish.xml" />
+    <None Include="Scripts\20240202_Pre_KorrekturDimBlueAntInvoiceInvoiceStateID.sql" />
+    <None Include="Scripts\_Post_ExecuteMasterPrcs.sql" />
+    <None Include="Scripts\20240221_Post_DimAccountAddAccountReportingName.sql" />
+    <None Include="Scripts\_Post_ExecAddUnknownDimensionMembersDynamic.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DB_DWH.refactorlog" />
+  </ItemGroup>
+</Project>
